@@ -1,1 +1,0 @@
- g++ -static -L/usr/lib/x86_64-linux-gnu -lmpg123 rellotge.cpp -o rellotge -lao 
