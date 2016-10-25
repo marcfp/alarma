@@ -1,0 +1,3 @@
+http://www.cplusplus.com/forum/beginner/80092/
+http://www.cplusplus.com/forum/beginner/117995/
+http://stackoverflow.com/questions/3220477/how-to-use-clock-in-c#3220503
