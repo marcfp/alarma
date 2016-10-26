@@ -8,3 +8,5 @@ clean:
 	$(RM) rellotge
 falta:
 	$(ECHO) $(FALTA)
+help:
+	$(ECHO) "all <- build sources clean <- drop main program (rellotge) falta <- show what is not done "
