@@ -1,12 +1,15 @@
-FALTA="falta treure hora actual tota l'estona, posar-hi entorn gràfic, etc ..."
-ECHO=echo
 CC=g++
+C_BUILD=-std=c++11 -I 
+LIBS=-lmpg123 -lao  
+C_BUILD_DIRECTORI=/home/marc/Programació/c++/rellotge
+SOURCE_rellotge=rellotge.cpp
+OUTPUT_rellotge=-o rellotge
 RM=rm
-all:
-	$(CC) rellotge.cpp -o rellotge -lmpg123 -lao
+RELLOTGE_COMPILAT=rellotge
+ECHO=@echo #echoing
+RELLOTGE=COMPILACIÓ DEL RELLOTGE:
+rellotge:
+	$(ECHO)  $(RELLOTGE) 
+	$(CC) $(C_BUILD)$(C_BUILD_DIRECTORI) $(SOURCE_rellotge) $(OUTPUT_rellotge) $(LIBS)
 clean:
-	$(RM) rellotge
-falta:
-	$(ECHO) $(FALTA)
-help:
-	$(ECHO) "all <- build sources clean <- drop main program (rellotge) falta <- show what is not done "
+	$(RM) $(RELLOTGE_COMPILAT)

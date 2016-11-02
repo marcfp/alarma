@@ -90,7 +90,7 @@ int main ()
     while((ptm->tm_hour+UTC)%24 != hora || ptm->tm_min != minuts){
 	    time ( &rawtime );
 	    ptm = gmtime ( &rawtime );
-	    cout << "Hora actual = " << (ptm->tm_hour+UTC)%24 << " : " <<  ptm->tm_min << endl;
+	    //cout << "Hora actual = " << (ptm->tm_hour+UTC)%24 << " : " <<  ptm->tm_min << endl;
 	    if(((ptm->tm_hour+UTC)%24 == hora) && (ptm->tm_min == minuts)) {
 			cout << "Mateixos minuts ?" << ptm->tm_min << " == " << minuts << endl;
 			playaudio( trakl);
